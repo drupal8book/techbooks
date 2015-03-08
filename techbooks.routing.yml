@@ -1,0 +1,7 @@
+techbooks.default_controller_hello:
+  path: 'techbooks'
+  defaults:
+    _controller: '\Drupal\techbooks\Controller\TechbooksController::bookList'
+    _title: 'List of technology books at Leanpub'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+name: Tech Books
+type: module
+description: Manage your technical books
+core: 8.x
+package: Examples
+

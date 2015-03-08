@@ -1,0 +1,15 @@
+parameters:
+  leanpub.booklist:
+    - {title: 'The Elements of Data Analytic Style', author: 'Jeff Leek', url: 'https://leanpub.com/datastyle'}
+    - {title: "Build APIs You Won't Hate", author: 'Phil Sturgeon', url: 'https://leanpub.com/build-apis-you-wont-hate'}
+    - {title: 'Easy Laravel 5', author: 'W. Jason Gilmore', url: 'https://leanpub.com/easylaravel'}
+    - {title: 'Ansible for DevOps', author: 'Jeff Geerling', url: 'https://leanpub.com/ansible-for-devops'}
+    - {title: 'Principles of Package Design', author: 'Matthias Noback', url: 'https://leanpub.com/principles-of-package-design'}
+    - {title: 'Modernizing Legacy Applications In PHP', author: 'Paul M. Jones', url: 'https://leanpub.com/mlaphp'}
+    - {title: 'Front-End Fundamentals', author: 'Carwin Young, Joe Fender', url: 'https://leanpub.com/front-end-fundamentals'}
+    - {title: 'Talking with Tech Leads', author: 'Patrick Kua', url: 'https://leanpub.com/talking-with-tech-leads'}
+
+services:
+  techbooks.listbooks:
+    class: Drupal\techbooks\ListBooks
+    arguments: ["%leanpub.booklist%"]

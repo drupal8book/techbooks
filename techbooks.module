@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains techbooks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function techbooks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the techbooks module.
+    case 'help.page.techbooks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage your technical books') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function techbooks_theme() {
+  $theme = [];
+
+  return $theme;
+}
