@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tech_books.field_author
+    - node.type.tech_books
+  module:
+    - user
+id: node.tech_books.default
+targetEntityType: node
+bundle: tech_books
+mode: default
+content:
+  links:
+    weight: 100
+  field_author:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  body: true
+third_party_settings: {  }

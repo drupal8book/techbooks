@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.tech_books
+  module:
+    - user
+id: node.tech_books.teaser
+targetEntityType: node
+bundle: tech_books
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  body: true
+third_party_settings: {  }
